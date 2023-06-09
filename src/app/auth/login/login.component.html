@@ -1,0 +1,29 @@
+<!-- <button class="submit-btn">ABOUT</button> -->
+
+<div class="form-styling">
+  <form (ngSubmit)="submit()" #myForm="ngForm" class="form-positioning">
+    <h1 class="loginStyling">Login</h1>
+    
+    <div class="formBalancing" >
+        <label class="spacingLeft" for="email"> E-Mail</label>
+        <input type="email" id="email" class="solo-input" 
+            placeholder="Enter Your Email ID" [(ngModel)]="form.email" name="email" #email="ngModel" required> 
+    </div>
+
+    <div *ngIf="email.invalid && ( email.dirty || email.touched)" class="rgError">Email Field must be valid</div>
+
+    <div class="formBalancing">
+        <label class="spacingLeft" for="password">Password</label>
+        <input type="password" id="password" class="solo-input" 
+            placeholder="Enter your Password" [(ngModel)]="form.password" 
+            name="password" [(ngModel)]="form.password" #password="ngModel" required>
+    </div>
+
+    <div *ngIf="password.invalid && ( password.dirty || password.touched)" class="rgError">Password Field must be valid</div>
+
+    <div class="formBalancing">
+        <button type="submit"[disabled]="myForm.form.invalid" class="submit-btn">SUBMIT</button>
+    </div>
+  </form>
+</div>
+

@@ -1,0 +1,9 @@
+<h1>Your Cart</h1>
+<div *ngIf="getCart().length > 0" >
+    <div *ngFor="let book of getCart(); let i=index;" >
+        <p class="new"> {{ i+1 }}. {{ book.name }} </p>
+    </div>
+</div>
+<div *ngIf="getCart().length === 0">NO BOOKS IN YOUR CART</div> <br>
+
+<button routerLink="/cart/about">Who We Are</button>

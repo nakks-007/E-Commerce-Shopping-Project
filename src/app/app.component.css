@@ -1,0 +1,18 @@
+.menu {
+  margin-left: 16px;
+  margin-right: 16px;
+  color: white;
+  font-size: medium;
+}
+
+.heading {
+  display: flex;
+  padding: 16px;
+  background-color: #5b21b6;
+  color: #ffffff;
+  justify-content: space-between;
+}
+
+.below-menu {
+  padding: 20px;
+}
