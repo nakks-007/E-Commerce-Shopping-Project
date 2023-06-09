@@ -1,3 +1,5 @@
+This is a Angular project with limited E-Commerce Functionalities like Login Page Authorization and Cart Adding.
+
 # RoutingProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
